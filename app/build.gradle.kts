@@ -1,7 +1,31 @@
+import org.jetbrains.kotlin.daemon.common.ensureServerHostnameIsSetUp
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+
+
+//    kotlin("jvm") version "1.9.20"
+//    id("io.qameta.allure") version "2.11.2"
+//    id("io.qameta.allure-report") version "2.11.2"
 }
+
+//reporting {
+//    baseDir = File("allureReports")
+//}
+//
+//allure {
+//    version.set("2.19.0")
+//    ensureServerHostnameIsSetUp()
+//}
+
+////Allure
+//val allureVersion = "2.24.0"
+//val aspectJVersion = "1.9.20.1"
+//val agent: Configuration by configurations.creating {
+//    isCanBeConsumed = true
+//    isCanBeResolved = true
+//}
 
 android {
     namespace = "com.example.homework_8"
@@ -59,6 +83,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.uiautomator)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -68,6 +93,19 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
+//
+//    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.3.0")
+//
+//    testImplementation("junit:junit:4.13.2")
+//    testImplementation(platform("io.qameta.allure:allure-bom:$allureVersion"))
+//    testImplementation("io.qameta.allure:allure-junit4")
+//
+//    agent("org.aspectj:aspectjweaver:${aspectJVersion}")
 
 }
+
+//allure.results.directory=build/allure-results
+
+//tasks.register<GradleBuild>("testAndAllureServe") {
+//    tasks = listOf("detekt", "myAllureServe")
+//}

@@ -8,16 +8,7 @@
       <entry key="app">
         <State />
       </entry>
-      <entry key="click()">
-        <State />
-      </entry>
-      <entry key="doMove()">
-        <State />
-      </entry>
-      <entry key="doMoveAndGiveUp()">
-        <State />
-      </entry>
-      <entry key="playGame()">
+      <entry key="openBulbasaurTest()">
         <State />
       </entry>
     </value>
